@@ -12,3 +12,12 @@ git remote add origin https://github.com/claudito/cloud.git
 
 -Subir el commit al github.com
 git push -u origin master
+
+
+- Como subir una nueva actualización
+
+git add .
+
+git commit -m "como subir una nueva actualización"
+
+git push -u origin master
