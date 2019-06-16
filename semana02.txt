@@ -1,0 +1,50 @@
+# Vaciar el contenido de un archivo sine eliminarlo
+
+cat /dev/null > errorlog.php
+
+cat /dev/null > accesslog.php
+
+
+
+#Documentación para instalar SQlServer - Conexión PHP7 y SQLServer Linux
+
+1. SQLServer 2017
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017
+
+2. Conector ODBC
+https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017
+
+3. Driver PHP SQLServer
+https://docs.microsoft.com/en-us/sql/connect/php/installation-tutorial-linux-mac?view=sql-server-2017
+
+
+- El password del SQl Server debe contener mayusculas, minusculas y numeros mayor o igual a 8 caracteres
+
+usuario: sa
+pass   : ******
+
+- SQLServer 2017 - PreRequisito PHP 7.1 minimo
+
+- Actualizar la versión de PHP 
+https://www.redeszone.net/2017/08/26/instalar-php-7-0-php-7-1-ubuntu/
+
+- Activar la versión por Defecto de PHP => 7.0 a 7.1
+sudo a2enmod php7.1
+sudo a2dismod php7.0
+sudo update-alternatives --set php /usr/bin/php7.1
+sudo systemctl restart apache2 / service apache2 restart
+
+https://maslinux.es/como-cambiar-entre-multiples-versiones-de-php-en-ubuntu-y-derivadas/
+
+- Acceder a MySQL
+
+ cd /etc/mysql/ (Enter)
+
+ cd mysql.conf.d (Enter)
+
+ nano mysqld.cnf
+
+ - conectarse a mysql por consola
+
+   mysql -u root -p (Enter)
+

@@ -1,0 +1,14 @@
+- inicializar el proyecto
+git init
+
+- Agregar archivos/carpetas al repositorio
+git add .
+
+- Crear el Commit (Nombre del cambio que estamos subiendo)
+git commit -m "First Commit"
+
+- Agregar el origen del repositorio
+git remote add origin https://github.com/claudito/cloud.git
+
+-Subir el commit al github.com
+git push -u origin master

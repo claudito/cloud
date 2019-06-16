@@ -1,0 +1,38 @@
+#virtual host / Subdominios
+
+1. Ruta de configuración de virtual host de Apache
+
+cd /etc/apache2/sites-available/
+ls
+
+2. Crear una copia del archivo de configuración de virtual host
+cp 000-default.conf contactounet.com.conf
+
+3. Renombrar archivo  000-default.conf 
+mv 000-default.conf  000-default.conf_bak
+
+4. Ingresar a carpeta publicadora
+cd /var/www
+
+5. Eliminar Carpeta html
+rm -R html
+
+6. Crer Carpeta para el dominio u subdominio
+mkdir contactounet.com
+mkdir app.contactounet.com
+
+7. Editar Archivo de Configuración(Vídeo)
+
+8. Activar Virtual Host
+  a2ensite contactounet.com.conf
+ sudo a2ensite app.contactounet.com.conf
+
+9. Reiniciar Apache
+
+   service apache2 restart
+
+
+
+
+
+

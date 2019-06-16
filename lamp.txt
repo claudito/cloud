@@ -1,0 +1,15 @@
+Comandos de Instalación de LAMP en DO
+
+1. Actualizar los paquetes:
+  apt-get update
+  sudo apt-get update
+
+2. Instalar tasksel(Asistente de instalación de software)
+   apt-get install tasksel
+
+3. Iniciar tasksel
+   tasksel
+
+4. Marcar LAMP Server con barrar espaciadora y luego tab para ir al botón <ok> (Enter)
+
+5. Al momento de la instalación de LAMP nos pedirá crear una contraseña para el usuario root de MySQL

@@ -1,0 +1,19 @@
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04
+
+-Crear Certificados
+
+1era Forma
+sudo certbot --apache -d contactounet.com
+sudo certbot --apache -d app.contactounet.com
+
+2da Forma
+sudo certbot --apache -d contactounet.com -d app.contactounet.com
+
+- Consultar Estado Certificado
+https://www.ssllabs.com/ssltest/analyze.html?d=contactounet.com&latest
+
+-Renovar subdominio
+sudo certbot renew --dry-run
+
+
+- Instalar phpmyadmin

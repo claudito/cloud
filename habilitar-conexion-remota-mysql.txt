@@ -1,0 +1,32 @@
+cd /etc/mysql  (Enter)
+
+cd mysql.conf.d (Enter)
+
+nano mysql.cnf (Enter) 
+* Buscar la linea bind-addres y cambiar 127.0.0.1 por 0.0.0.0
+
+control + O para guardar y control + X para salir
+
+Luego ingresar a la consola de MySQL
+
+mysql -u root -p (Enter e ingresar el pass)
+
+Asignar privilegios de acceso al usuario root
+
+grant all privileges on *.* to 'usuario'@'%' identified by 'password' with grant option;
+
+Habilitar Acceso Remoto
+GRANT ALL PRIVILEGES on *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+Salir de la consola 
+
+quit (Enter)
+
+
+Reiniciar MySQL
+
+service mysql restart
+
+
+
