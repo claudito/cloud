@@ -1,0 +1,35 @@
+Pasos para la instalación:
+
+1. Descargar Driver SQlServer "SQLSRV 43"(dll) : https://www.microsoft.com/en-us/download/details.aspx?id=55642
+2. Desempaquetar las dll(86) y seleccionar la adecuadas a nuestra versión de XAMPP(32 bits)
+
+3. Copiar las Dll seleccionadas a la carpeta de dll de PHP: xampp/php/ext
+*Nota:Por si no puedes los archivos verificar que no tengas ni servicio activo(xammp,apache),quitalos y vuelve a copiar en la carpeta.
+
+4. Agregar/Registrar las dll al archivo php.ini 
+  
+  xampp/php/php.ini
+ 
+  * ubicar la línea 903 y agregar
+
+	;Driver SQL Server
+	extension  = php_pdo_sqlsrv_7_ts_x86.dll
+	extension  = php_sqlsrv_7_ts_x86.dll
+
+
+
+5. Reiniciar el servidor
+
+6. ?
+
+
+
+
+Nota: Si una versión anterior min 5.6 , max 7.0 , 7.1 , 7.2.....
+
+
+5.6  SQLSRV40(dll) (googlear)
+
+7.1 adelante https://github.com/microsoft/msphpsql
+
+https://github.com/microsoft/msphpsql/releases

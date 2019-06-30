@@ -1,0 +1,12 @@
+https://uniwebsidad.com/tutoriales/como-instalar-composer-globalmente
+
+apt-get update
+#descargar composer
+curl -sS https://getcomposer.org/installer | php
+apt-get update
+#instalarlo de manera global
+sudo mv composer.phar /usr/local/bin/composer
+
+#alternativa si falla
+php -r "readfile('https://getcomposer.org/installer');" | php
+

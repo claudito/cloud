@@ -1,0 +1,19 @@
+apt-get update
+
+apt-get install proftpd
+
+editar archivo de configuración
+
+cd /etc/proftpd/
+
+nano prpftd.conf
+
+ubicar la líne defaultroot
+
+reiniciar el servicio ftp
+service proftpd restart
+
+
+crear el usuario FTP
+
+adduser luis
